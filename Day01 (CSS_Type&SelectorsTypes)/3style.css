@@ -1,0 +1,37 @@
+/*1.Universal selector * 
+    -least priority hota hai iska 
+    -sbpe apply krta hai
+
+*/
+
+*{
+    background-color: aqua;
+    color: black;
+}
+
+/* Group selector */
+/* h1,h2,p,#third{
+    background-color: aqua;
+} */
+
+
+/* select by attribute */
+h3[draggable="true"]{
+    background-color: blueviolet;
+    color: black;
+}
+
+/* select by child */
+/* section p{
+    background-color: aqua;
+} */
+
+/* select by descendent */
+section > p{
+    background-color: aqua;
+}
+
+div > h2{
+    color: aqua;
+    background-color: black;
+}

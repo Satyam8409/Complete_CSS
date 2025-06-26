@@ -1,0 +1,55 @@
+/*z-index:
+    -z-index is a CSS property that controls the vertical stacking order of elements that overlap.
+    -An element with a higher z-index appears in front of an element with a lower z-index.
+
+    -key points
+        -Works only on elements with position: relative, absolute, fixed, or sticky.
+        -The higher the z-index value, the closer it appears to the viewer (i.e., on top).
+        -It helps manage which elements appear above or below when elements overlap on the page.
+
+*/
+
+
+
+.box{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+}
+
+.container{
+    height: 40rem;
+    background-color: aqua;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.box1{
+    background-color: red;
+    position: relative;
+    z-index: 7;
+    top: 50px;
+    left: 50px;
+}
+
+.box2{
+    background-color: blue;
+    position: absolute; /*browser ke respect me position set krega-kyuki ki sara parent ka position static*/
+    left: 40px;
+    top: 20px;
+    z-index: 5;
+}
+
+/* default z-index wo hota hai auto */
+
+.box3{
+    background-color: green;
+    position: sticky;
+    top: 50px;
+    z-index: 5;
+}
+
+.box4{
+    background-color: orange;
+    position: fixed;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+    There are three types of CSS:
+        1.Inline CSS – written directly in the HTML element (highest priority).
+        2.Internal CSS – written in the <style> tag inside HTML (medium priority).
+        3.External CSS – written in a separate file and linked (lowest priority).
+
+    Priority order (highest to lowest):
+        Inline > Internal > External.
+        
+    Also, !important overrides all, and specificity (IDs > classes > tags) affects which style is applied.
+    -->
+    
+    
+    <style>
+        /*Internal CSS  */
+        /*select by element */
+        h1{
+            color: blue;
+            background-color: rgb(181, 233, 181);
+        }
+        h2{
+            color: aqua;
+            background-color: black;
+        }
+        ul{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- External CSS-prefered -->
+    
+    <!-- Inline CSS -->
+    <h1 style="color: blueviolet;">Hello Coder Army</h1>
+    <h2>Diet plan</h2>
+    <ul>
+        <li>Egg</li>
+        <li>Chicken</li>
+        <li>Whey</li>
+        <li>Milk</li>
+    </ul>
+
+    <h2>Money fame</h2>
+
+</body>
+</html>

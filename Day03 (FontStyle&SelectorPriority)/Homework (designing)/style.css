@@ -1,0 +1,113 @@
+/*1.Global Styles
+        Use:    Set default font, text color, and background for the whole page.
+        Syntax: body { font-family: 'Verdana'; color: #333; background-color: #f0f0f0; }
+
+*/
+body {
+    font-family: 'Verdana', sans-serif; 
+    color: black; 
+    background-color: rgb(184, 222, 222) 
+}
+
+
+
+/*selecting by tag name*/
+header {
+    background-color: black; 
+    color: aqua; 
+}
+h1 {
+    font-size: 3rem; /*set font-size thrice of html font-size*/
+    font-weight: bold; 
+}
+h2 {
+    font-size: 1.5rem; 
+    color: #e6c50e; 
+}
+
+
+
+
+/*selecting by tag name: Article Styles */
+article {
+    background-color: black; 
+}
+
+/* descendant selector?
+    It targets an element (h3) inside another element with a specific class (.css-article).
+    It applies the styles only if the h3 is within an element that has the class css-article. */
+.css-article h3 {
+    font-size: 2em; 
+    color: #FF69B4; 
+}
+.css-article p {
+    color: white; 
+}
+.css-article h4 {
+    color: #FF69B4; 
+    font-size: 1.5rem; 
+}
+/*descendant selector: List Styles */
+ul>li{
+    color: white;
+}
+/*child selector*/
+ul li{
+    color: white;
+}
+
+
+
+.js-article h3,h4 {
+    font-size: 2rem; 
+    color: #FF4500; 
+}
+.js-article p {
+    color: white; 
+    font-size: 1rem;/*bydefault*/
+}
+/* Table Styles */
+table{
+    width: 50rem;
+    background-color: white;
+    border-color: rgb(17, 17, 17);
+    color: black;
+}
+td,th{
+    text-align: left;/*bydefault*/ 
+}
+/* 
+.js-article table tbody{
+    background-color: white;
+} 
+
+
+th, td {
+    text-align: left;  Aligns text to the left in table cells 
+}
+
+th {
+    background-color: #007BFF; 
+    color: white; 
+}
+
+td {
+    color: #333; Sets a darker color for table cells 
+}
+*/
+
+.responsive-article h3 {
+    font-size: 2rem; 
+    color: #8A2BE2; 
+}
+.responsive-article p {
+    color: white; 
+}
+
+
+/* Footer Styles */
+footer {
+    color: white; 
+    background-color: black; 
+    font-weight: bold; 
+}

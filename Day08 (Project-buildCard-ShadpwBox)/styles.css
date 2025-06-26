@@ -1,0 +1,179 @@
+/*box-shadow in CSS
+    -offset-x → how far to move the shadow horizontally
+    -offset-y → how far to move it vertically
+    -blur-radius → how soft or sharp the shadow is
+    -color → the shadow color
+*/
+
+
+
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(240, 225, 227);
+    /* text-align: center; */
+    margin-left: 9rem;
+}
+
+.img img{
+    height: 35vh;
+    border-radius: 10px;
+}
+/*individual ko jake dena prta hai ye display property*/
+.box{
+    display: inline-block;
+    margin: 2px;
+}
+.card{
+    display: inline-block;
+    /* position: relative; */
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* box-shadow: 2px 4px 6px gray; */
+
+}
+.name1{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.rest1_name_rating,.food_price,.location1_dist{
+    position: relative;
+}
+.rating1{
+    background-color: green;
+    color: white;
+    padding:0px 6px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    position: absolute;
+    right: 1px;
+}
+.food_price{
+    color: rgb(76, 72, 72);
+    font-weight: lighter;
+}
+.price1{
+    position: absolute;
+    right: 1px;
+}
+.location1_dist{
+    color: rgb(76, 72, 72);
+    font-weight: lighter;
+}
+.distance{
+    position: absolute;
+    right: 1px;
+    color: black;
+    font-weight: 500;
+}
+.card:hover{
+    /* box-sizing: border-box; */
+    /* padding: 10px; */
+    /* background-color: white; */
+    box-shadow: 2px 2px 20px gray;
+}
+
+.img{
+    position: relative;
+}
+
+.img p{
+    position: absolute;
+    bottom: 15px;
+    color: white;
+    background-color: rgb(33, 33, 216,0.5);
+    padding: 5px 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+/* 
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(253, 243, 243);
+}
+
+.image{
+    position: relative;
+}
+
+.card:hover{
+    background-color: white;
+    border-color: white;
+}
+
+.off{
+    font-size: 30px;
+    color: white;
+    background-color: rgba(218, 43, 16, 0.6);
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+.card{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 20px solid rgb(253, 243, 243);
+    border-radius: 20px;
+}
+
+
+.Box{
+    display: inline-block;
+}
+
+.img{
+    height: 250px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.Restaurant_name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Restaurant , .food, .Location{
+   position: relative;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.rating{
+    background-color: green;
+    height: 20px;
+    padding: 3px;
+    position: absolute;
+    right: 5px;
+    color: white;
+    border-radius: 8px;
+}
+
+.price, .Distance{
+    position: absolute;
+    right: 5px;
+}
+
+.food, .Place{
+    font-size: 15px;
+    color: rgb(88, 88, 88);
+}
+
+.Distance{
+    font-size: 10px;
+    font-weight: bold;
+} */

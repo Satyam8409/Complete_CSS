@@ -1,0 +1,57 @@
+/*vw (Viewport Width)
+    1vw = 1% of the width of the visible browser window.
+    Useful for: Making elements responsive to screen size horizontally.
+    eg:-
+        1vw = 1% of 1280px = 12.8px
+        1vh = 1% of 600px = 6px
+
+  vh (Viewport Height)
+    1vh = 1% of the height of the browser window.
+    Useful for: Full-screen sections, centering vertically, responsive designs.
+    eg:-
+        1vh = 1% of 800px = 8 pixels
+        50vh = 50% of 800px = 400 pixels
+        100vh = 100% = the full visible height of the browser → 800px
+
+*/
+body{
+    background-color: antiquewhite;
+}
+
+.card{
+    /* font-size: 1rem; */
+    width: 30vw;
+    height: 10vw;  
+    background-color: aqua;
+    border: 0.21rem black solid;
+    padding: 1.5rem;
+    margin: 20px 20px 20px 35vw;
+}
+
+
+
+h2{
+    color: red;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+/* h3:hover{
+    color: blueviolet;
+
+} */
+
+.card:hover{
+   transform: scale(1.1);
+   transition: transform 0.3s ease;
+   h3{
+    color: blueviolet;
+   }
+}
+
+

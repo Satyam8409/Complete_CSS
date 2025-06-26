@@ -1,0 +1,38 @@
+/*  priority order:id > attribute > class > decendent = child 
+    jo v = priority ka hai tb jo baad me likha hua hai usko priority milga 
+*/
+
+body{
+    background-color: aqua;
+}
+
+h1{
+    background-color: beige;
+    color: red !important; /*using !important will make it highest priority */
+}
+
+/* Element tag-id has more priority than class*/
+
+/* Attribute selector */
+ h1[draggable="true"]{
+    background-color: yellow ;
+} 
+/* class */
+.first_class{
+    background-color: blueviolet;
+}
+
+
+/* child */
+body > h1{
+    background-color: gray;
+}
+
+/* Descendent */
+body h1{
+    background-color: black;
+}
+
+
+
+

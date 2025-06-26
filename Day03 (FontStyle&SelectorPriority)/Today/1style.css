@@ -1,0 +1,27 @@
+/*1.font-style
+    Use: Controls text appearance like normal, italic, oblique.
+    h1 { font-style: italic; }
+    
+  2.text-transform
+    Use: Changes case of text → uppercase, lowercase, capitalize.
+    h2 { text-transform: uppercase; }
+
+
+*/
+
+
+
+h1{
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+h2{
+    font-style: oblique;
+    text-transform: uppercase;
+}
+
+/* Font stretch */
+/* font variant */
+
+/* % of viewport width */

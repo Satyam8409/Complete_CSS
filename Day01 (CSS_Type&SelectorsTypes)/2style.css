@@ -1,0 +1,70 @@
+/*Types of CSS selectors
+    1. Universal Selector (*)
+        Use: Targets all elements on the page.
+        Syntax: * { margin: 0; padding: 0; }
+
+    2. Element Selector (Tag Selector)
+        Use: Targets HTML elements by their tag name.
+        Syntax: p { color: blue; }
+
+    3. Class Selector (.)
+        Use: Targets elements with a specific class.
+        Syntax: .box { background-color: yellow; }
+
+    4. ID Selector (#)
+        Use: Targets a single element with a specific ID.
+        Syntax: #header { font-size: 2rem; }
+
+    5. Group Selector
+        Use: Applies the same style to multiple selectors.
+        Syntax: h1, h2, h3 { color: green; }
+
+    6. Descendant Selector
+        Use: Targets an element inside another element.
+        Syntax: .card p { color: gray; }
+
+    7. Child Selector (>)
+        Use: Targets an element that is a direct child of another.
+        Syntax: ul > li { list-style: none; }
+
+    8. Adjacent Sibling Selector (+)
+        Use: Targets an element immediately after another.
+        Syntax: h2 + p { color: red; }
+
+    9. General Sibling Selector (~)
+        Use: Targets all elements that are siblings after a given element.
+        Syntax: h2 ~ p { font-style: italic; }
+
+    10. Attribute Selector
+        Use: Targets elements with a specific attribute.
+        Syntax: input[type="text"] { border: 1px solid black; }
+
+
+*/
+
+h1{
+    color: aquamarine;
+    background-color: black;
+}
+
+ul{
+    color: black;
+    background-color: aqua;
+}
+
+/*Select by class name :-You need to apply dot(.) first
+    -jiska v class name first hai sb pe ye apply hoga
+*/
+.first{
+    background-color: rgb(148, 151, 138);
+}
+.second{
+    background-color: aqua;
+}
+
+
+/*select by id (unique):-# ko use karna hai, then id name */
+#third{
+    background-color: pink;
+}
+

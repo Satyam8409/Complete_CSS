@@ -1,0 +1,117 @@
+/*FlexBox
+    it is 1D layout for laying items in rows or column
+    it is better way to align item into a container
+    Syntax-display:flex  
+
+  FlexBox has two part
+    A.Flex Container(fc)
+        jiska display propert ko flex kr denge o fc ban jata h  
+        PROPERTIES-iska khud ka property hota h
+            1.flex-direction
+                :row--jitna v item h fc me sab row-wise me arrange ho jayega(L-R)                    (by default row hi hota h)
+                :row-reverse--jitna v item h fc me sab row me arrange ho jayega(R-L)
+                :column--jitna v item h fc me sab column-wise me arrange ho jayega(T-B)
+                :column-reverse--jitna v item h fc me sab column me arrange ho jayega(B-T)
+
+            2.Flex-wrap
+                :nowrap(bydefault)--jaisa h waise hi rhega khud ko responsive nhi banayega (yaha pe fi khud ka size chhota krega jab tak fi ka content allow krega)    
+                :wrap--khud ko responsive bana lega lkin tvi jab fc ka size chota krege or fi fc se bahar jane lagega tab  
+                :wrap-reverse--fc bottom me aa jyega (L-R)
+
+                SHORTHAND(1&2 sath me set krne keliye)-->flex-flow:row-reverse wrap;
+
+            3.justify-content(row wise space distribute krega)
+                :center--fi ko fc ke centre(row wise center) me la dega
+                :space-between--both corner se space nhi dena h pr btw wale me space equal dena h
+                :space-evenly--aab dono corner or btw sab me equal space hoga
+                :space-around--corner wale dono me kaam place or btw wale box ke beech me jayada equal space 
+
+            4.align-item(top-bottom(column) space manage krega)
+                :flex-start--fc ke top me fi ko la dega
+                :center--Vertically(Top-Bottom) centre me fi ko la dega
+                :flex-end--fc ke bottom me fi ko la dega    
+                :strech--nhi smjh aaya
+
+
+    B.Flex Item(fi)
+        jisko fc banaye h uske andar wala element(tags) fi ban jayega
+        PROPERTIES-iska v khud ka property hota h
+            1.order
+                :integer--jis v fi ka value jayada hoga o last me jayega
+            2.flex-grow
+                :whole no.--jiska value bara hoga o jayada speed se size bara krega or jiska 0 hoga o same siize ka rehega   
+            3.flex-shrink
+                :whole no.--jiska value jayada hoga o jldi se chhota hoga fc ko chhota krne ke baad
+            4.flex-basis
+                :size--kisi v fi ka size(only width) change krna ho to yaha value dedo ho jayega
+                -when flex-direction is set to be row flex-basis :will control width
+                -when flex-direction is set to be column flex-basis :will control height
+
+            SHORTHAND(2&3&4)-->flex:2 3 400px    
+
+            5.align-self
+                :center
+*/
+
+
+.container{
+    display: flex;
+    background-color: aqua;
+    flex-direction: row;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    margin: 2px;
+}
+
+/* flex item */
+/* order it defines the order of element */
+/* deafult order is zero */
+
+.box1{
+    background-color: red;
+    /* order: 10; */
+    /* align-self: start; */
+}
+
+.box2{
+    background-color: blue;
+    /* width: 600px; */
+    /* flex-grow: 1;  */
+    /* flex-shrink: 2; */
+    /* flex-basis: 300px; */
+}
+
+.box3{
+    background-color: green;
+    /* order: -1; */
+    /* flex-grow: 3;  */
+    /* align-self:end; */
+    /* flex: 2 2 200px; */
+
+}
+
+.box4{
+    background-color: orange;
+    /* order: 5; */
+    
+}
+
+/* Desktop */
+
+
+
+/* Tablet */
+
+
+/* Mobile */
+
+
+

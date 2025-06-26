@@ -1,0 +1,47 @@
+/*1.%problem with height
+    -Most of the time, an element's parent is either the <body> or a <div> that naturally stretches to fit the full width 
+        of the page,so the browser knows how wide it is.
+    -This will work fine because the parent (like <body> or a div) typically already has a width — usually 100% of the 
+        viewport or defined by the browser.
+
+❌ But height is different:
+    -Browsers calculate height based on content unless you explicitly set it.
+     If the parent’s height is auto (default), the child’s height: 50% has nothing to reference.
+
+Box-sizing :content-box     
+    -By default, the box model uses content-box, which means:
+        Total width = content + padding + border
+        200 (content) + 40 (padding) + 10 (border) = 250px
+        So even though you wrote width: 200px, the element becomes 250px wide.
+
+Box-sizing :border-box;
+    Now the formula becomes:
+    Total width = 200px (including padding + border)
+    It includes padding and border inside the 200px — so the box stays 200px total.
+*/
+
+h1{
+
+    background-color: aqua;
+    width: 30%;
+    height: 15rem;
+    padding: 1rem 1rem 0rem 1rem;
+    margin: 10rem;
+    border: 5px black solid;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+
+/* Not responsive at all
+h1{
+    width: 600px;
+    height: 200px;
+    padding: 50px;
+    margin: 210px;
+    border: 5px black solid;
+    box-sizing: border-box;
+    
+} */
+

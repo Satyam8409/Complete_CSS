@@ -1,0 +1,22 @@
+/*Float uses
+    -without using float img ke baad content ana start hua ,but img ke right me pura space hai, usse space ke pass content ko lane ke liye float ka use krte hai 
+
+
+*/
+
+
+
+.img1{
+    height: 200px;
+    width: 200px;
+    float: left;/*ye likhte img ke right me jitna v space hai oha se content start hoga*/
+    margin-right: 10px;
+}
+
+.img2{
+    height: 200px;
+    width: 200px;
+    float: right; 
+    clear: left; /*agar me right me koi img phele se hai to mai neeche chala jauga*/
+    /* clear: both; */
+}

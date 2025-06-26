@@ -1,0 +1,42 @@
+/* .container{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    overflow: auto;
+} */
+
+
+/*Overflow
+    -container ka height width jo set kiye hai usse boht jayda content available hai isse wajh se content box se bahar aa ja raha hai
+    -isse ko handle krne ke liye we have overflow
+    -by default 
+        overflow :visible   //hota hai
+        overflow :hidden    //ye set krne se overflowed content visible hoga hi nhi
+        overflow :scroll    //iseme jitna content bach gaya usko scroll kr skte hai
+        overflow :auto      //agar content overflow hoga to khud hi scroll bar dedega nhi to nhi dega  
+*/
+
+.container{
+    width: 500px;
+    height: 300px;
+    background-color: aqua;
+    /* overflow: hidden; */ 
+    /* overflow: scroll; */
+    overflow: auto;
+
+
+}
+
+
+
+
+
+
+
+
+/* visible (default) */
+/* hidden */
+/* scroll */
+/* auto */
+
+

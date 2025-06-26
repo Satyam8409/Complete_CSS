@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+}
+
+header{
+    background-color: cadetblue;
+    position: fixed;
+    width: 100%;
+    /* top: 0px;
+    left: 0px;
+    right: 0px; */
+}
+main{
+    padding-top: 50px;
+   /* margin-top: 50px; */
+}
+
+h2{
+    background-color:aqua ;
+    position: static;/*not cleared*/
+    bottom: 20px;
+}
+

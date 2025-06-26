@@ -1,0 +1,94 @@
+/* Position-set how element is positioned in document
+    1.static (position: static);
+        -Default behavior – element wahi rahega jaha HTML me likha hai 
+        -static-mtlb browser ke sath sath chalega
+        -by default sare element static hote h
+        -top,right,left,bottom,z-index kaam nhi krta h no effect
+
+    2.relative
+        khud ke respect me position change krega
+        eg:-
+            position: relative;
+            top: 50px;        //jaha pe phele tha oha se 50px niche
+            left: 20px;       //jaha pe phele tha oha se 20px right khisak jayega
+
+
+    3.absolute
+        closest parent ke respect me position change krega, agar closest parent ka position other than static hai tb hi, nhi to upper wale dusre parent ko check krega
+        agar sara parent ka position static hoga tb browser view-port ke respect me position change krega
+        ye jo og place chorta hai usko dusra el use kr skta hai, unlike in relative jo ki hold krta hai
+
+    4.fixed
+        hamesa browser ke respect me position alter hoga, yaha pe hamesa browser hoga
+        ye hamesa fixed rhega browser ke sath move nhi krega
+        iska v chora hua place use kr lega koi dusra el
+        navbar isse tarike se banta h
+
+    5.sticky
+        top se jitna value h o range ayega tab fixed ke jaisa ho jayega
+
+    6.z-index-decide krta h kon sa element overlap krega
+        by default jo phele likha jata h o niche jata h
+        by default z-index sabka 0 hota h
+        jitna +ve value utna upper,jitna -ve value utna under
+
+*/
+
+
+
+.container{
+    background-color:rgb(28, 26, 21);
+    margin-left: 200px;
+    margin-top: 150px;
+    margin-right: 20px;
+    /* position: relative; */
+    height: 1000px;
+}
+.newcontainer{
+    width: 800px;
+    height: 800px;
+    background-color:brown;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+.box1{
+    background-color: red;
+    position: absolute;   /*closest parent ke respect me position change krega, agar closest parent ka position other than static hai tb hi, nhi to upper wale dusre parent ko check krega*/
+    top: 10px; /*avi iska sara parent ka position static hai isliye browser ke respect me position set kiya hai*/
+}
+.box2{
+    background-color: blue;
+    position: relative;/*jis place pe tha uspe koi dusra el nhi aa skta hai,o khali place as it is rahega*/
+    position: relative;
+    top: 30px;/*apne og position se itna neeche aao*/
+    left: 20px;/*apne og position se itna right me jao*/
+
+
+    /* position: sticky;   */
+
+}
+.box3{
+    background-color: green;
+    position: fixed;/* hamesa browser ke respect me position alter hoga, yaha pe hamesa browser hoga    */
+    top: 30px;
+    left: 33rem;
+}
+.box4{
+    background-color: orange;
+    position: sticky;/*  top se jitna value h o range ayega tab fixed ke jaisa ho jayega-lakin khud ke parent area tkk hi-jaise dusra parent aayega waise hi o move krne lg jayega    */
+    top: 30px;
+    /* left: 23 rem; */
+}
+
+
+/* top bottom left right */
+/*  static*/
+/* relative */
+/* absoloute */
+/* fixed */
+/* sticky */
+/* Homework sticky mein top mention karna jaruri hai kya? */
+/* Agar mention na karu, toh wo work kyn nahi kar rha */

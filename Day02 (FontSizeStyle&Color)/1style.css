@@ -1,0 +1,55 @@
+/*1.Font Size Units 
+    -px (pixels): Pixel size is determinde by your device screen size-dont use px bcz it is not responsive instead hard coded avoid using for flexibility.
+    -em: Relative to parent element's font size.
+    -% (percent): Also relative to parent font size.
+    -rem: Relative to the root (HTML) font size — better for consistent scaling.
+
+    -if (parent) does NOT have a font-size defined,
+      -then the <p> will look to the next parent up the chain — basically, it climbs the HTML tree.
+       Eventually, if no parent defines a font-size, it reaches the <html> element, 
+       which has a default font-size of 16px in most browsers.
+
+  2.Font Styling
+    -Font family: Defines the style of text (like Arial, sans-serif, etc.).
+    -Font size: Can be set using px, %, em, or rem depending on the use-case.  
+
+  3.define colors in multiple ways:
+    -Name:- color: red;
+    -RGB:-  color: rgb(255, 0, 0);
+    -Hex:-  color: #ff0000;
+    -HSL:-  color: hsl(0, 100%, 50%);
+    -RGBA:- color: rgba(255, 0, 0, 0.5)
+*/
+
+/* Relative units in CSS 
+    1.percentage(%)
+        parent ke relative me measure hoga
+    2.em-font size ke relative me measure hoga, kuch property ke liye apne aap pe(eg width) or kuch ke liye parent pe(font size)
+        font size ke liye font size of parent dekha jayega
+        relative to the font size of parent
+            eg:-box1 is 100px & box2->1em -->box2 is also 100px
+            1em-->means 1 times of parent font size
+            2em-->means 2 times of parent font size
+        width ke liye font size of element itself dekhta h 
+
+    3.rem (Root Em)-font size of root element mtlb sabse bahar wala element (like html,body tag) ke hisab se set hogi
+    4.viewport height(vh)-browser ke height ke respect me  
+    5.viewport width (vw)-browser ke width ke respect me
+*/    
+
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 300%; /*h1 ka parent ka size se 300% badh jayega*/
+}
+
+h3{
+    color: #a13818ff;
+    font-size: 2rem; /*h3 ka size html font-size ka twice ho jayega */
+}
+
+/* name, rgb, hexadecimal, hsl , a means alpha */
+p{
+    color: hsla(228, 55%, 24%,1);
+    font-size: 25px;
+}
+

@@ -1,0 +1,57 @@
+/*1.Block Elements
+    -Take full width by default.
+    -You can apply: height, width, and margin (all sides).
+    -Examples: div, p, h1, etc.
+        .second {
+            display: block;// default height, width, and margin work normally.
+        }
+
+  2.Inline Elements
+    -Only take up as much space as needed.
+    -You cannot apply height and width.
+    -Only horizontal margins (left/right) work.
+    -Examples: span, a, strong, etc.
+
+  3.Inline-Block Elements
+    -Behave like inline (sit next to each other).
+    -But allow height, width, and full margin.
+    -Good for creating box-like elements that sit side by side.
+*/
+
+
+
+
+.first{
+    /* display: inline; */
+    background-color: orange;
+    height: 200px;
+    width: 200px;
+    padding: 5rem 1rem;
+    box-sizing: border-box;/*padding & border aab dono ko total space ke andar manage krega*/
+    margin: 40px;
+    border: 1px black solid;
+}
+
+.second{
+   /* display: inline; */
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    border: 1px black solid;
+
+}
+
+span{
+    /*koi v property set hi nhi hoga jb tkk inline-block nhi krege tb tkk */
+    display: inline-block;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    border: 1px black solid;
+
+}
+
+
+
