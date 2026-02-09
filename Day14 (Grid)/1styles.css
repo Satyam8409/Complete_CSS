@@ -1,0 +1,124 @@
+/*Grid
+    -It is used to create the 2D layout of website.
+    -can be create with flexBox also but will become complicated.
+    -grid v parent container pe hi lagega tb uske andar ke child to arrangr kr payege same as flex
+    
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+}
+.container{
+    /* height: 600px; */
+    height: 100%;
+    width: 100%; 
+    background-color: gray;
+    display: grid;                                   /*display grid krte hi uske andar ka child khud ko evenly height me distribute kr lega to fit the container height */
+    grid-template-columns: 200px 200px 200px;        /*isse property se jitna baar value likhenge utna column banega with mentioned size*/
+    grid-template-rows: 200px 200px;                 /*isse property se jitna baar value likhenge utna row banega with mentioned size*/
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;         /*fr is unit that will help to cover all the space of the container, with hardcode(px) val which is not possible*/
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    gap: 0.5rem;
+    /* gap: 1rem; */
+}
+.box{
+    font-size: 2rem;
+    background-color: palegoldenrod;
+    /* padding: 10px; */
+    border: 5px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 8;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items:end;
+}
+
+.footer{
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1/8; /*shorthand for above*/
+}
+.sidebar{
+    /* grid-row-start: 2;
+    grid-row-end: 4; */
+    grid-row: 2/4;
+}
+.content1{
+    grid-column: 2/8;
+}
+.content2{
+    grid-column: 2/5;
+}
+.content3{
+    grid-column: 5/8;
+}
+
+
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    padding: 5rem;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(136, 122, 122);
+    display: grid;
+    grid-template-columns: 200px 200px 200px; 
+    fraction 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px; 
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem; 
+    gap: 1rem;
+}
+
+.Box{
+   font-size: 2rem;
+   background-color: orange;
+   border: 0.5rem solid black;
+}
+
+.header, .footer{
+    grid-column-start: 1;
+    grid-column-end: 4; 
+    grid-column: 1/4;
+}
+
+
+.sidebar{
+     grid-row-start: 2;
+    grid-row-end: 4; 
+    grid-row: 2/4;
+}
+
+.Box3{
+    grid-column: 2/4;
+}
+
+*/
