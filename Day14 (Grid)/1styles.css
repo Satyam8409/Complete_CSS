@@ -26,7 +26,9 @@ body{
 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;         /*fr is unit that will help to cover all the space of the container, with hardcode(px) val which is not possible*/
     grid-template-rows: 1fr 2fr 2fr 1fr;
-    gap: 0.5rem;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    gap: 0.2em;
+    /* gap: 0.5rem; */
     /* gap: 1rem; */
 }
 .box{
@@ -44,9 +46,9 @@ body{
     grid-column-start: 1;
     grid-column-end: 8;
     /* text-align: center; */
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items:end;
+    align-items:end; */
 }
 
 .footer{

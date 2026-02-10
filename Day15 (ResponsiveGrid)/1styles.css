@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    background-color: grey;
+    height: 100%;
+    padding: 4rem;
+    display: grid;
+    gap: 1rem;
+    /* grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr); */
+
+    /* grid-template-areas: 
+    "box1 box2 box2 box3"
+    "box1 box4 box5 box6"
+    "box1 box7 box8 box6"; */
+    
+}
+
+.Box{
+    background-color: green;
+    font-size: 2rem;
+}
+
+.Box3,.Box5,.Box7{
+    background-color: red;
+    }
+.Box4,.Box8{
+    background-color: yellow;
+}
+
+/* .Box1{
+    grid-area: box1;
+}
+.Box2{
+    grid-area: box2;
+}
+.Box3{
+    grid-area: box3;
+}
+.Box4{
+    grid-area: box4;
+}
+.Box5{
+    grid-area: box5;
+}
+.Box6{
+    grid-area: box6;
+}
+.Box7{
+    grid-area: box7;
+}
+.Box8{
+    grid-area: box8;
+} */
+
+@media (min-width:500px) {
+    .container{
+    background-color: grey;
+    height: 100%;
+    padding: 4rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    grid-template-areas: 
+    "box1 box2 box2 box3"
+    "box1 box4 box5 box6"
+    "box1 box7 box8 box6";
+    }
+
+    .Box{
+        background-color: green;
+        font-size: 2rem;
+    }
+    
+    .Box1{
+        grid-area: box1;
+    }
+    .Box2{
+        grid-area: box2;
+    }
+    .Box3{
+        grid-area: box3;
+    }
+    .Box4{
+        grid-area: box4;
+    }
+    .Box5{
+        grid-area: box5;
+    }
+    .Box6{
+        grid-area: box6;
+    }
+    .Box7{
+        grid-area: box7;
+    }
+    .Box8{
+        grid-area: box8;
+    }
+
+    .Box3,.Box5,.Box7{
+    background-color: red;
+    }
+    .Box4,.Box8{
+        background-color: yellow;
+    }
+    
+}

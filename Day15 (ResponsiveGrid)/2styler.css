@@ -12,34 +12,21 @@ body{
 .container{
     height: 100%;
     gap: 1rem;
-    background-color: black;
+    background-color: white;
     padding: 4rem;
     display: grid;
-    justify-content: center;
+    /* justify-content: center; */
     /* grid-template-columns: repeat(4,1fr); */
     /* grid-template-columns: minmax(100px,200px) minmax(100px,200px) minmax(100px,200px) minmax(100px,200px); */
-    /* grid-template-columns: repeat(auto-fit,minmax(100px,200px)); */
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    /* justify-items: center;
-    align-items: center; */
-    place-items: center end;
-    /* align-items justify content */
+    grid-template-columns: repeat(auto-fit,minmax(100px,200px));/*auto-fill jb tkk container me space hai box usme rahega nhi hai space to neeche shift krdega box ko */
+
 }
 
 /* Auto-fill auto-fit */
 
 
 .Box{
-
-    height: 100px;
-    width: 100px;
     background: yellowgreen;
     font-size: 2rem;
     color: black;
-}
-
-.Box2{
-    justify-self: start;
-    align-self: flex-start;
 }
